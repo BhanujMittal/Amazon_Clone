@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Shopping site in India: Shop Online for Mobiles, Books and Watches... Amazon.in</title>
+    <link rel="shortcut icon" href="/Amazon_Clone/Photos/amazon_icon.webp" type="image/x-icon">
+    <link rel="stylesheet" href="/Amazon_Clone/CSS/style.css">
+    <link rel="stylesheet" href="/Amazon_Clone/CSS/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+
+<body class="bg-yellow-200">
+    <div class="loadAnimate"></div>
+    <header id="header">
+        <div class="navbar" id="upperNav">
+            <div class="nav-logo border cursor-pointer">
+                <div class="logo"><img src="/Amazon_Clone/Photos/amazon_logo1.png" alt=""></div>
+                <span class="in">.in</span>
+            </div>
+            <div class="nav-location border cursor-pointer">
+                <a href="#">
+                    <div class="nav-location-items">
+                        <div class="location-left-line">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <div class="location-right-line">
+                            <span class="nav-line-1">Hello</span>
+                            <span class="nav-line-2">Select your address</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <form action="hello.py" class="nav-search">
+                <div class="nav-left-fill-right">
+                    <div class="nav-left">
+                        <select name="nav-category" class="nav-category" id="" size="1">
+                            <option class="options" value="All">All</option>
+                            <option class="options" value="Alexa Skills">Alexa Skills</option>
+                            <option class="options" value="Amazon Devices">Amazon Devices</option>
+                            <option class="options" value="Amazon Fashion">Amazon Fashion</option>
+                            <option class="options" value="Amazon Pharmacy">Amazon Pharmacy</option>
+                            <option class="options" value="Appliances">Appliances</option>
+                            <option class="options" value="Apps and Games">Apps and Games</option>
+                            <option class="options" value="Audible Audiobooks">Audible Audiobooks</option>
+                            <option class="options" value="Baby">Baby</option>
+                            <option class="options" value="Beauty">Beauty</option>
+                            <option class="options" value="Books">Books</option>
+                            <option class="options" value="Cars and Motorbike">Cars and Motorbikes</option>
+                            <option class="options" value="Clothing and Accessories">Clothing and Accessories</option>
+                            <option class="options" value="Collectibles">Collectibles</option>
+                            <option class="options" value="Computer and Accessories">Computer and Accessories</option>
+                            <option class="options" value="Electronics">Electronics</option>
+                            <option class="options" value="Furniture">Furniture</option>
+                            <option class="options" value="Garden and Outdoor">Garden and Outdoor</option>
+                            <option class="options" value="Gift Cards">Gift Cards</option>
+                            <option class="options" value="Grocery and Gourment Foods">Grocery and Gourment Foods
+                            </option>
+                            <option class="options" value="Health and Personal Care">Health and Personal Care</option>
+                            <option class="options" value="Home and Kitchen">Home and Kitchen</option>
+                            <option class="options" value="Industrial and Scientific">Industrial and Scientific</option>
+                            <option class="options" value="Jewelry">Jewelry</option>
+                            <option class="options" value="Kindle Store">Kindle Store</option>
+                            <option class="options" value="Luggage and Bags">Luggage and Bags</option>
+                            <option class="options" value="Luxury Beauty">Luxury Beauty</option>
+                            <option class="options" value="Movies and TV Shows">Movies and TV Shows</option>
+                            <option class="options" value="Music">Music</option>
+                            <option class="options" value="Musical Instruments">Musical Instruments</option>
+                            <option class="options" value="Office Products">Office Products</option>
+                            <option class="options" value="Pet Supplies">Pet Supplies</option>
+                            <option class="options" value="Prime Video">Prime Video</option>
+                            <option class="options" value="Shows and Handbags">Shows and Handbags</option>
+                            <option class="options" value="Software">Software</option>
+                            <option class="options" value="Sports Fitness and Outdoors">Sports Fitness and Outdoors
+                            </option>
+                            <option class="options" value="Subscribe and Save">Subscribe and Save</option>
+                            <option class="options" value="Tools and Home Improvements">Tools and Home Improvements
+                            </option>
+                            <option class="options" value="Toys and Games">Toys and Games</option>
+                            <option class="options" value="Under 500">Under 500</option>
+                            <option class="options" value="Video Games">Video Games</option>
+                            <option class="options" value="Watches">Watches</option>
+                        </select>
+                    </div>
+                    <div class="nav-fill">
+                        <input type="text" placeholder="Search Amazon.in" class="nav-search-panel">
+                    </div>
+                    <div class="nav-right">
+                        <button type="button" class="nav-search-button cursor-pointer"><i
+                                class="fa-solid fa-magnifying-glass"></i></button>
+                    </div>
+                </div>
+            </form>
+            <div class="nav-language border cursor-pointer">
+                <div id="#nav-language" class="nav-flag"></div>
+                <div class="nav-selected-language">
+                    <button type="button" class="nav-language-selection">
+                        <select name="" id="nav-language" size="1">
+                            <option value="En" class="nav-options">EN</option>
+                            <option value="Hindi" class="nav-options">Hindi</option>
+                            <option value="Tamil" class="nav-options">Tamil</option>
+                            <option value="Marathi" class="nav-options">Marathi</option>
+                            <option value="Bengali" class="nav-options">Bengali</option>
+                            <option value="Telugu" class="nav-options">Telugu</option>
+                            <option value="Punjabi" class="nav-options">Punjabi</option>
+                            <option value="Malyalam" class="nav-options">Malyalam</option>
+                        </select>
+                    </button>
+                </div>
+            </div>
+            <div class="sign-in cursor-pointer border">
+                <span class="nav-line-1">Hello, sign in</span>
+                <span class="nav-line-2">Account & Lists</span>
+            </div>
+            <div class="return-order cursor-pointer border">
+                <span class="nav-line-1">Returns</span>
+                <span class="nav-line-2">& Orders</span>
+            </div>
+            <div class="cart-container border cursor-pointer">
+                <div class="cart-logo-count">
+                    <span class="cartlogo-count nav-line-1">0</span>
+                    <div class="cart-logo"></div>
+                </div>
+                <span class="nav-line-2">Cart</span>
+            </div>
+        </div>
+        <div id="lowerNav" class="navbar">
+            <div class="lower-left-nav">
+                <div class="lower-nav-all hover border cursor-pointer height-full flex-box padding-horizontal">
+                    <i class="fa-solid fa-bars"></i>
+                    <span class="nav-line-2">All</span>
+                </div>
+                <div class="lower-nav-miniTv hover border cursor-pointer height-full flex-box padding-horizontal">
+                    <span class="nav-line-2">Amazon miniTV</span>
+                </div>
+                <div class="lower-nav-sell hover border cursor-pointer height-full flex-box padding-horizontal">
+                    <span class="nav-line-2">Sell</span>
+                </div>
+                <div class="lower-nav-bestSellers hover cursor-pointer border height-full flex-box padding-horizontal">
+                    <span class="nav-line-2">Best Sellers</span>
+                </div>
+                <div class="lower-nav-mobiles hover cursor-pointer border height-full flex-box padding-horizontal">
+                    <span class="nav-line-2">Mobiles</span>
+                </div>
+                <div class="lower-nav-deals hover border height-full flex-box cursor-pointer padding-horizontal">
+                    <span class="nav-line-2">Today's Deals</span>
+                </div>
+                <div class="lower-nav-releases hover border height-full cursor-pointer flex-box padding-horizontal">
+                    <span class="nav-line-2">New Releases</span>
+                </div>
+                <div class="lower-nav-service hover border height-full cursor-pointer flex-box padding-horizontal">
+                    <span class="nav-line-2">Customer Service</span>
+                </div>
+                <div class="lower-nav-electronic hover border height-full cursor-pointer flex-box padding-horizontal">
+                    <span class="nav-line-2">Electronics</span>
+                </div>
+                <div class="lower-nav-gift hover border cursor-pointer height-full flex-box padding-horizontal">
+                    <span class="nav-line-2">Gift Ideas</span>
+                </div>
+                <div class="lower-nav-home hover border height-full cursor-pointer flex-box padding-horizontal">
+                    <span class="nav-line-2">Home & Kitchen</span>
+                </div>
+            </div>
+            <div class="lower-right-nav border height-full cursor-pointer flex-box">
+                <img src="/Amazon_Clone/Photos/lower-right-nav.jpg" alt="">
+            </div>
+        </div>
+    </header>
+
+    <!-- main section -->
+    <main class="hero-container-1">
+        <div class="backgroundImg-box">
+            <div class="hero-blank-space cursor-pointer"></div>
+            <div class="hero-container">
+                <div class="box" id="box-1">
+                    <h2 class="heading-secondary">Revamp your home in style</h2>
+                    <div class="container1-box-1 container-box cursor-pointer">
+                        <div class="box1-img-1 img-box">
+                            <img src="/Amazon_Clone/Photos/hero-container-1-box-1-image-1.jpg" alt="">
+                            <span class="img-desc">Home Decoration</span>
+                        </div>
+                        <div class="box1-img-2 img-box">
+                            <img src="/Amazon_Clone/Photos/hero-container-1-box-1-image-2.jpg" alt="">
+                            <span class="img-desc">Home Furnishing</span>
+                        </div>
+                    </div>
+                    <div class="container1-box-2 container-box cursor-pointer">
+                        <div class="box2-img-1 img-box">
+                            <img src="/Amazon_Clone/Photos/hero-container-1-box-2-img-1.jpg" alt="">
+                            <span class="img-desc">Home Storage</span>
+                        </div>
+                        <div class="box2-img-2 img-box">
+                            <img src="/Amazon_Clone/Photos/hero-container-1-box-2-img-2.jpg" alt="">
+                            <span class="img-desc">Lighting Solutions</span>
+                        </div>
+                    </div>
+                    <button class="btn-primary"><a href="#">Explore All</a></button>
+                </div>
+                <div class="box" id="box-2">
+                    <h2 class="heading-secondary">Upto 60% Off | Styles for man</h2>
+                    <div class="container1-box-1 container-box cursor-pointer">
+                        <div class="box1-img-1 img-box">
+                            <img src="/Amazon_Clone/Photos/hero-container-1-box2-img1.jpg" alt="">
+                            <span class="img-desc">Clothing</span>
+                        </div>
+                        <div class="box1-img-2 img-box">
+                            <img src="/Amazon_Clone/Photos/hero-container-1-box2-img2.jpg" alt="">
+                            <span class="img-desc">Footwear</span>
+                        </div>
+                    </div>
+                    <div class="container1-box-2 container-box cursor-pointer">
+                        <div class="box2-img-1 img-box">
+                            <img src="/Amazon_Clone/Photos/hero-container-1-box2-img3.jpg" alt="">
+                            <span class="img-desc">Watches</span>
+                        </div>
+                        <div class="box2-img-2 img-box">
+                            <img src="/Amazon_Clone/Photos/hero-container-1-box2-img4.jpg" alt="">
+                            <span class="img-desc">Bags and Walle</span>
+                        </div>
+                    </div>
+                    <button class="btn-primary"><a href="#">See all offers</a></button>
+                </div>
+                <div class="box" id="box-3">
+                    <h2 class="heading-secondary">Bluetooth Calling Smartwatch starts at ₹1,999</h2>
+                    <div class="container1-box-1 container-box cursor-pointer">
+                        <img class="watch-img" src="/Amazon_Clone/Photos/watch-image.jpg" alt="">
+                    </div>
+                    <button class="btn-primary"><a href="#">Shop Now</a></button>
+                </div>
+                <div class="box" id="box-4">
+                    <h2 class="heading-secondary">More Watches</h2>
+                    <div class="container1-box-1 container-box cursor-pointer">
+                        <div class="box1-img-1 img-box">
+                            <img src="/Amazon_Clone/Photos/watch-image1.jpg" alt="">
+                            <span class="img-desc">Home Decoration</span>
+                        </div>
+                        <div class="box1-img-2 img-box">
+                            <img src="/Amazon_Clone/Photos/watch-image2.jpg" alt="">
+                            <span class="img-desc">Home Furnishing</span>
+                        </div>
+                    </div>
+                    <div class="container1-box-2 container-box">
+                        <div class="box2-img-1 img-box">
+                            <img src="/Amazon_Clone/Photos/watch-image-3.jpg" alt="">
+                            <span class="img-desc">Home Storage</span>
+                        </div>
+                        <div class="box2-img-2 img-box">
+                            <img src="/Amazon_Clone/Photos/watch-image-4.jpg" alt="">
+                            <span class="img-desc">Lighting Solutions</span>
+                        </div>
+                    </div>
+                    <button class="btn-primary"><a href="#">Shop Now</a></button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <main class="hero-container-2">
+        <section class="hero-container-2__content">
+            <div class="box" id="hero-box-1">
+                <h2 class="heading-secondary">Appliances for your home | Up to 55% off</h2>
+                <div class="container1-box-1 container-box cursor-pointer">
+                    <div class="box1-img-1 img-box">
+                        <img src="/Amazon_Clone/Photos/img1.jpg" alt="">
+                        <span class="img-desc">Air Conditioners</span>
+                    </div>
+                    <div class="box1-img-2 img-box">
+                        <img src="/Amazon_Clone/Photos/img2.jpg" alt="">
+                        <span class="img-desc">Refrigerators</span>
+                    </div>
+                </div>
+                <div class="container1-box-2 container-box cursor-pointer">
+                    <div class="box2-img-1 img-box">
+                        <img src="/Amazon_Clone/Photos/img3.jpg" alt="">
+                        <span class="img-desc">Microwaves</span>
+                    </div>
+                    <div class="box2-img-2 img-box">
+                        <img src="/Amazon_Clone/Photos/img4.jpg" alt="">
+                        <span class="img-desc">Washing Machines</span>
+                    </div>
+                </div>
+                <button class="btn-primary"><a href="#">See more</a></button>
+            </div>
+            <div class="box" id="hero-box-2">
+                <h2 class="heading-secondary">Upto 60% Off | Styles for women</h2>
+                <div class="container-box container1-box-1 cursor-pointer">
+                    <div class="box1-img-1 img-box">
+                        <img src="/Amazon_Clone/Photos/img5.jpg" alt="">
+                        <span class="img-desc">Women's Clothing</span>
+                    </div>
+                    <div class="box1-img-2 img-box">
+                        <img src="/Amazon_Clone/Photos/img6.jpg" alt="">
+                        <span class="img-desc">Footwear + Handbags</span>
+                    </div>
+                </div>
+                <div class="container1-box-2 container-box cursor-pointer">
+                    <div class="box2-img-1 img-box">
+                        <img src="/Amazon_Clone/Photos/img7.jpg" alt="">
+                        <span class="img-desc">Watches</span>
+                    </div>
+                    <div class="box2-img-2 img-box">
+                        <img src="/Amazon_Clone/Photos/img8.jpg" alt="">
+                        <span class="img-desc">Fashion Jewelry</span>
+                    </div>
+                </div>
+                <button class="btn-primary"><a href="#">See all offers</a></button>
+            </div>
+            <div class="box" id="hero-box-3">
+                <h2 class="heading-secondary">Up to 75% off | Headphones</h2>
+                <div class="container1-box-1 container-box cursor-pointer">
+                    <div class="box1-img-1 img-box">
+                        <img src="/Amazon_Clone/Photos/imga1.jpg" alt="">
+                        <span class="img-desc">Up to 75% off | Boat</span>
+                    </div>
+                    <div class="box1-img-2 img-box">
+                        <img src="/Amazon_Clone/Photos/imga2.jpg" alt="">
+                        <span class="img-desc">Up to 75% off | Boult</span>
+                    </div>
+                </div>
+                <div class="container1-box-2 container-box">
+                    <div class="box2-img-1 img-box">
+                        <img src="/Amazon_Clone/Photos/imga3.jpg" alt="">
+                        <span class="img-desc">Up to 75% off | Noise</span>
+                    </div>
+                    <div class="box2-img-2 img-box">
+                        <img src="/Amazon_Clone/Photos/imga4.jpg" alt="">
+                        <span class="img-desc">Up to 75% off | Zebronics</span>
+                    </div>
+                </div>
+                <button class="btn-primary"><a href="#">See all offers</a></button>
+            </div>
+            <div class="box" id="hero-box-4">
+                <h2 class="heading-secondary">Offers in travel tickets</h2>
+                <div class="container1-box-1 container-box cursor-pointer">
+                    <div class="box1-img-1 img-box">
+                        <img src="/Amazon_Clone/Photos/imga5.jpg" alt="">
+                        <span class="img-desc">Up to ₹5000 off | Flight tickets</span>
+                    </div>
+                    <div class="box1-img-2 img-box">
+                        <img src="/Amazon_Clone/Photos/imga6.jpg" alt="">
+                        <span class="img-desc">Zero gateway charges on trains</span>
+                    </div>
+                </div>
+                <div class="container1-box-2 container-box">
+                    <div class="box2-img-1 img-box">
+                        <img src="/Amazon_Clone/Photos/imga7.jpg" alt="">
+                        <span class="img-desc">Guaranteed rewards on bus tickets</span>
+                    </div>
+                    <div class="box2-img-2 img-box">
+                        <img src="/Amazon_Clone/Photos/imga8.jpg" alt="">
+                        <span class="img-desc">Products for your travel needs</span>
+                    </div>
+                </div>
+                <button class="btn-primary"><a href="#">See all offers</a></button>
+            </div>
+            </div>
+            </div>
+        </section>
+    </main>
+    <section id="todays-deals">
+        <div class="deal-heading">
+            <h2 class="heading-secondary">Today's Deals</h2>
+            <button class="deal-btn btn-primary"><a href="#">See all deals</a></button>
+        </div>
+        <div class="deal-box-container">
+            <div class="deal-box-1 deal-box">
+                <a href="#">
+                    <img src="/Amazon_Clone/Photos/deal-box-img1.jpg" alt="Watch">
+                    <div class="deal-price">
+                        <span class="deal-off deal-line-1">Up to 90% off</span>
+                        <span class="deal-of-day deal-line-1">Deal of the day</span>
+                    </div>
+                    <span class="product-about deal-line-2">Newly launched boAt Lunar Vista sm...</span>
+                </a>
+            </div>
+            <div class="deal-box-2 deal-box">
+                <a href="#">
+                    <img src="/Amazon_Clone/Photos/deal-box-img2.jpg" alt="Watch">
+                    <div class="deal-price">
+                        <span class="deal-off deal-line-1">Up to 56% off</span>
+                        <span class="deal-of-day deal-line-1">Deal of the day</span>
+                    </div>
+                    <span class="product-about deal-line-2">Starting 299 - ASIAN footwear Collect...</span>
+                </a>
+            </div>
+            <div class="deal-box-3 deal-box">
+                <a href="#">
+                    <img src="/Amazon_Clone/Photos/deal-box-img3.jpg" alt="Watch">
+                    <div class="deal-price">
+                        <span class="deal-off deal-line-1">14% off</span>
+                        <span class="deal-of-day deal-line-1">Deal of the day</span>
+                    </div>
+                    <span class="product-about deal-line-2">Best offers on OPPO F23 5G...</span>
+                </a>
+            </div>
+            <div class="deal-box-4 deal-box">
+                <a href="#">
+                    <img src="/Amazon_Clone/Photos/deal-box-img4.jpg" alt="Watch">
+                    <div class="deal-price">
+                        <span class="deal-off deal-line-1">Up to 87% off</span>
+                        <span class="deal-of-day deal-line-1">Deal of the day</span>
+                    </div>
+                    <span class="product-about deal-line-2">Best offers on PC and Electronics acces...</span>
+                </a>
+            </div>
+            <div class="deal-box-5 deal-box">
+                <a href="#">
+                    <img src="/Amazon_Clone/Photos/deal-box-img5.jpg" alt="Watch">
+                    <div class="deal-price">
+                        <span class="deal-off deal-line-1">Up to 47% off</span>
+                        <span class="deal-of-day deal-line-1">Deal of the day</span>
+                    </div>
+                    <span class="product-about deal-line-2">Wallpapers from wolpin</span>
+                </a>
+            </div>
+            <div class="deal-box-6 deal-box">
+                <a href="#">
+                    <img src="/Amazon_Clone/Photos/deal-box-img6.jpg" alt="Watch">
+                    <div class="deal-price">
+                        <span class="deal-off deal-line-1">Up to 27% off</span>
+                        <span class="deal-of-day deal-line-1">Deal of the day</span>
+                    </div>
+                    <span class="product-about deal-line-2">Best offers on V-Guards Products...</span>
+                </a>
+            </div>
+            <div class="deal-box-7 deal-box">
+                <a href="#">
+                    <img src="/Amazon_Clone/Photos/deal-box-img7.jpg" alt="Watch">
+                    <div class="deal-price">
+                        <span class="deal-off deal-line-1">Up to 87% off</span>
+                        <span class="deal-of-day deal-line-1">Deal of the day</span>
+                    </div>
+                    <span class="product-about deal-line-2">WaterScience best deals Bath Faucets...</span>
+                </a>
+            </div>
+            <div class="deal-box-8 deal-box">
+                <a href="#">
+                    <img src="/Amazon_Clone/Photos/deal-box-img8.jpg" alt="Watch">
+                    <div class="deal-price">
+                        <span class="deal-off deal-line-1">Up to 60% off</span>
+                        <span class="deal-of-day deal-line-1">Deal of the day</span>
+                    </div>
+                    <span class="product-about deal-line-2">Wallpapers from wolpin...</span>
+                </a>
+            </div>
+            <div class="deal-box-9 deal-box">
+                <a href="#">
+                    <img src="/Amazon_Clone/Photos/deal-box-img9.jpg" alt="Watch">
+                    <div class="deal-price">
+                        <span class="deal-off deal-line-1">Up to 67% off</span>
+                        <span class="deal-of-day deal-line-1">Deal of the day</span>
+                    </div>
+                    <span class="product-about deal-line-2">Best offers on Red Chief and Furo Footw...</span>
+                </a>
+            </div>
+            <div class="deal-box-10 deal-box">
+                <a href="#">
+                    <img src="/Amazon_Clone/Photos/deal-box-img10.jpg" alt="Watch">
+                    <div class="deal-price">
+                        <span class="deal-off deal-line-1">Up to 81% off</span>
+                        <span class="deal-of-day deal-line-1">Deal of the day</span>
+                    </div>
+                    <span class="product-about deal-line-2">Best offers on bath hardware equipme...</span>
+                </a>
+            </div>
+            <div class="deal-box-11 deal-box">
+                <a href="#">
+                    <img src="/Amazon_Clone/Photos/deal-box-img11.jpg" alt="Watch">
+                    <div class="deal-price">
+                        <span class="deal-off deal-line-1">Up to 58% off</span>
+                        <span class="deal-of-day deal-line-1">Deal of the day</span>
+                    </div>
+                    <span class="product-about deal-line-2">Towel Racks, Shelves and More from w</span>
+                </a>
+            </div>
+            <div class="deal-box-12 deal-box">
+                <a href="#">
+                    <img src="/Amazon_Clone/Photos/deal-box-img12.jpg" alt="Watch">
+                    <div class="deal-price">
+                        <span class="deal-off deal-line-1">Up to 76% off</span>
+                        <span class="deal-of-day deal-line-1">Deal of the day</span>
+                    </div>
+                    <span class="product-about deal-line-2">Telescope and Step Ladders from Prime...</span>
+                </a>
+            </div>
+            <div class="deal-box-13 deal-box">
+                <a href="#">
+                    <img src="/Amazon_Clone/Photos/deal-box-img13.jpg" alt="Watch">
+                    <div class="deal-price">
+                        <span class="deal-off deal-line-1">Up to 52% off</span>
+                        <span class="deal-of-day deal-line-1">Deal of the day</span>
+                    </div>
+                    <span class="product-about deal-line-2">Women's Heels & Flats: TRASE, Denill...</span>
+                </a>
+            </div>
+            <div class="deal-box-14 deal-box deal-box">
+                <a href="#">
+                    <img src="/Amazon_Clone/Photos/deal-box-img14.jpg" alt="Watch">
+                    <div class="deal-price">
+                        <span class="deal-off deal-line-1">Up to 70% off</span>
+                        <span class="deal-of-day deal-line-1">Deal of the day</span>
+                    </div>
+                    <span class="product-about deal-line-2">Starting 299 - ASIAN Footwear Collect...</span>
+                </a>
+            </div>
+            <div class="deal-box-15 deal-box">
+                <a href="#">
+                    <img src="/Amazon_Clone/Photos/deal-box-img15.jpg" alt="Watch">
+                    <div class="deal-price">
+                        <span class="deal-off deal-line-1">Up to 90% off</span>
+                        <span class="deal-of-day deal-line-1">Deal of the day</span>
+                    </div>
+                    <span class="product-about deal-line-2">Best offers on Bacca Bucci Wallet and Belt...</span>
+                </a>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <section class="footer-back-to-top">
+            <button type="button" class="cursor-pointer"><a href="#header">Back To Top</a></button>
+        </section>
+        <section class="footer-top">
+            <div class="footer-top-container">
+                <div class="know-us footer-top-box">
+                    <h3 class="footer-heading">Get to know us</h3>
+                    <span class="footer-line-2"><a href="#">About Us</a></span>
+                    <span class="footer-line-2"><a href="#">Careers</a></span>
+                    <span class="footer-line-2"><a href="#">Press Releases</a></span>
+                    <span class="footer-line-2"><a href="#">Amazon Science</a></span>
+                </div>
+                <div class="contact-us footer-top-box">
+                    <h3 class="footer-heading">Connect with Us</h3>
+                    <span class="footer-line-2"><a href="https://www.instagram.com">Instagram</a></span>
+                    <span class="footer-line-2"><a href="https://www.facebook.com">Facebook</a></span>
+                    <span class="footer-line-2"><a href="https://www.twitter.com">Twitter</a></span>
+                </div>
+                <div class="make-money-with-us footer-top-box">
+                    <h3 class="footer-heading">Make Money with Us</h3>
+                    <span class="footer-line-2"><a href="#">Sell on Amazon</a></span>
+                    <span class="footer-line-2"><a href="#">Sell Under Amazon Accelerator</a></span>
+                    <span class="footer-line-2"><a href="#">Protect and Build Your Brand</a></span>
+                    <span class="footer-line-2"><a href="#">Amazon Global Selling</a></span>
+                    <span class="footer-line-2"><a href="#">Become an Affiliate</a></span>
+                    <span class="footer-line-2"><a href="#">Fullfilment by Amazon</a></span>
+                    <span class="footer-line-2"><a href="#">Advertise Your Products</a></span>
+                    <span class="footer-line-2"><a href="#">Amazon Pay on Merchants</a></span>
+                </div>
+                <div class="help footer-top-box">
+                    <h3 class="footer-heading">Let Us Help You</h3>
+                    <span class="footer-line-2"><a href="#">COVID-19 and Amazon</a></span>
+                    <span class="footer-line-2"><a href="#">Your Account</a></span>
+                    <span class="footer-line-2"><a href="#">Return Centre</a></span>
+                    <span class="footer-line-2"><a href="#">100% Purchase Protection</a></span>
+                    <span class="footer-line-2"><a href="#">Amazon App Download</a></span>
+                    <span class="footer-line-2"><a href="#">Help</a></span>
+                </div>
+            </div>
+        </section>
+        <div class="footer-blank-line"></div>
+        <section class="footer-middle">
+            <div class="footer-middle-top-container">
+                <div class="footer-language">
+                    <img class="logo" src="/Amazon_Clone/Photos/amazon_logo1.png" alt="">
+                    <div class="footer-selected-language">
+                        <button class="footer-language-selection">
+                            <select name="" id="footer-language">
+                                <option value="En" class="nav-options">EN</option>
+                                <option value="Hindi" class="nav-options">Hindi</option>
+                                <option value="Tamil" class="nav-options">Tamil</option>
+                                <option value="Marathi" class="nav-options">Marathi</option>
+                                <option value="Bengali" class="nav-options">Bengali</option>
+                                <option value="Telugu" class="nav-options">Telugu</option>
+                                <option value="Punjabi" class="nav-options">Punjabi</option>
+                                <option value="Malyalam" class="nav-options">Malyalam</option>
+                            </select>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-middle-bottom-container">
+                <div class="country-list">
+                    <ul>
+                        <li><span class="footer-line-1"><a href="#">Australia</a></span></li>
+                        <li><span class="footer-line-1"><a href="#">Brazil</a></span></li>
+                        <li><span class="footer-line-1"><a href="#">Canada</a></span></li>
+                        <li><span class="footer-line-1"><a href="#">China</a></span></li>
+                        <li><span class="footer-line-1"><a href="#">France</a></span></li>
+                        <li><span class="footer-line-1"><a href="#">Germany</a></span></li>
+                        <li><span class="footer-line-1"><a href="#">Italy</a></span></li>
+                        <li><span class="footer-line-1"><a href="#">Japan</a></span></li>
+                        <li><span class="footer-line-1"><a href="#">Mexico</a></span></li>
+                        <li><span class="footer-line-1"><a href="#">Neitherlands</a></span></li>
+                        <li><span class="footer-line-1"><a href="#">Poland</a></span></li>
+                        <li><span class="footer-line-1"><a href="#">Singapore</a></span></li>
+                        <li><span class="footer-line-1"><a href="#">Spain</a></span></li>
+                        <li><span class="footer-line-1"><a href="#">Turkey</a></span></li>
+                        <li><span class="footer-line-1"><a href="#">United Aram Emirates</a></span></li>
+                        <li><span class="footer-line-1"><a href="#">United Kingdom</a></span></li>
+                        <li><span class="footer-line-1"><a href="#">United States</a></span></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="footer-bottom">
+            <div class="more-on-amazon">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td><a class="font-size-13px" href="#">AbeBooks <span class="footer-line-1">Books, art <br>
+                                        &collectibles</span></a></td>
+                            <td><a class="font-size-13px" href="#">Amazon Web Services <span
+                                        class="footer-line-1">Scalable Cloud<br>Computing Services</span></a></td>
+                            <td><a class="font-size-13px" href="#">Audible<span class="footer-line-1">Download<br>Audio
+                                        Books</span></a></td>
+                            <td><a class="font-size-13px" href="#">DPReview<span
+                                        class="footer-line-1">Digital<br>Photography</span></a></td>
+                            <td><a class="font-size-13px" href="#">IMDB<span class="footer-line-1">Movies & TV<br>&
+                                        Celebrities</span></a></td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td><a class="font-size-13px" href="#">Shopbop<span class="footer-line-1">Designer<br>
+                                        Fashion Brands</span></a></td>
+                            <td><a class="font-size-13px" href="#">Amazon Business <span
+                                        class="footer-line-1">Everything For<br>Your Business</span></a></td>
+                            <td><a class="font-size-13px" href="#">Prime Now<span class="footer-line-1">2-Hour
+                                        Delivery<br>On Every Items
+                                    </span></a></td>
+                            <td><a class="font-size-13px" href="#">Amazon Prime Music<span class="footer-line-1">100-
+                                        millions songs, ad-free<br>Over 15 million podcast episodes</span></a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="copyright">
+                <ul>
+                    <li><span class="footer-line-1"><a href="#">Conditions of Use & Sale</a></span></li>
+                    <li><span class="footer-line-1"><a href="#">Privacy Notice</a></span></li>
+                    <li><span class="footer-line-1"><a href="#">internet Based ads</a></span></li>
+                </ul>
+                <span class="copyright-line">&copy; 1996-2023, Amazon.com, Inc. or its affiliates</span>
+            </div>
+        </section>
+    </footer>
+</body>
+
+<script>
+    window.onscroll = function () {
+        makeNavbarSticky();
+    };
+
+    var navbar = document.querySelector(".navbar");
+    var upperNav = document.getElementById("upperNav");
+    var sticky = upperNav.offsetTop;
+
+    function makeNavbarSticky() {
+        if (window.pageYOffset >= sticky) {
+            upperNav.classList.add("sticky");
+        } else {
+            upperNav.classList.remove("sticky");
+        }
+    }
+
+    // Add this event listener to reset the "sticky" class when the page is scrolled to the top
+    window.addEventListener("scroll", function () {
+        if (window.pageYOffset === 0) {
+            upperNav.classList.remove("sticky");
+        }
+    });
+
+    window.addEventListener('beforeunload', function (e) {
+        // Cancel the event to prevent the page from refreshing
+        e.preventDefault();
+        // Show a confirmation dialog
+        e.returnValue = ''; // Some browsers require a non-empty string
+    });
+
+</script>
+
+</html>
