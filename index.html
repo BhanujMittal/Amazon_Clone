@@ -35,7 +35,7 @@
             <form action="hello.py" class="nav-search">
                 <div class="nav-left-fill-right">
                     <div class="nav-left">
-                        <select name="nav-category" class="nav-category" id="" size="1">
+                        <select name="nav-category" class="nav-category" id="mySelect" size="1">
                             <option class="options" value="All">All</option>
                             <option class="options" value="Alexa Skills">Alexa Skills</option>
                             <option class="options" value="Amazon Devices">Amazon Devices</option>
@@ -84,10 +84,10 @@
                         </select>
                     </div>
                     <div class="nav-fill">
-                        <input type="text" placeholder="Search Amazon.in" class="nav-search-panel">
+                        <input type="text" placeholder="Search Amazon.in" class="nav-search-panel" id="searchInput">
                     </div>
                     <div class="nav-right">
-                        <button type="button" class="nav-search-button cursor-pointer"><i
+                        <button type="button" class="nav-search-button cursor-pointer" onclick="searchAmazon()"><i
                                 class="fa-solid fa-magnifying-glass"></i></button>
                     </div>
                 </div>
@@ -676,6 +676,22 @@
         // Show a confirmation dialog
         e.returnValue = ''; // Some browsers require a non-empty string
     });
+
+    const searchInput = document.getElementById('searchInput')
+    const searchAmazon = async () => {
+        const sectionClass = searchInput.value
+        let targetElement = document.getElementById(sectionClass)
+
+        if (targetElement) {
+            // Scroll to the target element
+            targetElement.scrollIntoView({ behavior: 'smooth',
+        marginY: '2rem' });
+        } else {
+            alert('Section not found'); // Provide feedback if the section doesn't exist
+        }
+    }
+
+    
 
 </script>
 
